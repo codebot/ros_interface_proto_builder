@@ -1,0 +1,31 @@
+// generated from rosidl_adapter_proto/resource/idl.proto.em
+// with input from composition_interfaces:srv/UnloadNode.idl
+// generated code does not contain a copyright notice
+
+syntax = "proto3";
+
+package composition_interfaces.srv.pb.jazzy;
+
+option cc_generic_services = true;
+
+message UnloadNode_Request
+{
+
+  fixed64 unique_id = 1;
+}
+
+
+message UnloadNode_Response
+{
+
+  bool   success       = 1;
+
+  //Human readable error message if success is false, else empty string.
+  string error_message = 2;
+}
+
+
+service UnloadNode
+{
+  rpc Call (UnloadNode_Request) returns (UnloadNode_Response);
+}

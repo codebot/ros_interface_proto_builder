@@ -1,0 +1,49 @@
+// generated from rosidl_adapter_proto/resource/idl.proto.em
+// with input from test_msgs:msg/BoundedPlainSequences.idl
+// generated code does not contain a copyright notice
+
+syntax = "proto3";
+
+package test_msgs.msg.pb.jazzy;
+
+import "test_msgs/msg/basic_types.proto";
+import "test_msgs/msg/constants.proto";
+import "test_msgs/msg/defaults.proto";
+
+//Bounded sequences of different POD types
+message BoundedPlainSequences
+{
+
+  repeated bool                              bool_values            =  1;
+  bytes                                      byte_values            =  2;
+  bytes                                      char_values            =  3;
+  repeated float                             float32_values         =  4;
+  repeated double                            float64_values         =  5;
+  bytes                                      int8_values            =  6;
+  bytes                                      uint8_values           =  7;
+  repeated int32                             int16_values           =  8;
+  repeated uint32                            uint16_values          =  9;
+  repeated sfixed32                          int32_values           = 10;
+  repeated fixed32                           uint32_values          = 11;
+  repeated sfixed64                          int64_values           = 12;
+  repeated fixed64                           uint64_values          = 13;
+  repeated test_msgs.msg.pb.jazzy.BasicTypes basic_types_values     = 14;
+  repeated test_msgs.msg.pb.jazzy.Constants  constants_values       = 15;
+  repeated test_msgs.msg.pb.jazzy.Defaults   defaults_values        = 16;
+  repeated bool                              bool_values_default    = 17;
+  bytes                                      byte_values_default    = 18;
+  bytes                                      char_values_default    = 19;
+  repeated float                             float32_values_default = 20;
+  repeated double                            float64_values_default = 21;
+  bytes                                      int8_values_default    = 22;
+  bytes                                      uint8_values_default   = 23;
+  repeated int32                             int16_values_default   = 24;
+  repeated uint32                            uint16_values_default  = 25;
+  repeated sfixed32                          int32_values_default   = 26;
+  repeated fixed32                           uint32_values_default  = 27;
+  repeated sfixed64                          int64_values_default   = 28;
+  repeated fixed64                           uint64_values_default  = 29;
+
+  //Regression test: check alignment of basic field after a sequence field is correct
+  sfixed32                                   alignment_check        = 30;
+}
